@@ -8,7 +8,9 @@
 
 ### Reproducing issues
 
+Set the build arg `REPRODUCE_ISSUE` to either `true` or `false` in the `docker-compose.yaml` file.
+
 Build and start the Docker container to run the tests under the same conditions:
 ```
-docker-compose up
+docker-compose up --build
 ```
