@@ -1,0 +1,12 @@
+version: '3'
+services:
+  arrow-adbc-issue-1283:
+    container_name: arrow-adbc-issue-1283
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - SNOWFLAKE_USERNAME=${SNOWFLAKE_USERNAME}
+      - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
+    volumes:
+      - ${PWD}:/app
