@@ -1,5 +1,6 @@
 README.md
 docker-compose.yaml
+*.parquet
 
 data_lakehouse/*
 __pycache__/*
